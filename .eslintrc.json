@@ -10,5 +10,13 @@
     "parser": "babel-eslint"
   },
   "ignorePatterns": ["webpack.config.js"],
-  "rules": {}
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["/src/*.test.js"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
